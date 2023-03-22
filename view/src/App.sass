@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap')
+
+$navColor: #1a1a1f
+$primaryColor: #1a1a1f
+$white : #ffffff
+$inputColor: #f7f7f7f3
+
+html 
+    scrollbar-width: none
+
+::-webkit-scrollbar 
+    width: 0px
+
+body 
+    background: linear-gradient(to right, rgba(26, 25, 31, 0.7), rgba(26, 25, 31, 0.7)), url(./landing/landing.jpg)
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    background-attachment: fixed
+    color: $white
+    font-family: 'Quicksand', sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.cover 
+    width: 100vw
+    height: 90vh
+    vertical-align: middle
+    display: table-cell
+    animation: transitionIn 0.5s
+
+    &text
+        padding-left: 1.5rem
+
+.card
+    background-color: $primaryColor
+    margin: 1em 0em 1em 0em
+    font-weight: bold
+    border: none
+    border-radius: 4px
+
+.lead
+    font-size: 120%
+
+.filedetails
+    font-size: 70%
+
+.box
+    top: 54%
+    left: 50%
+    position: absolute
+    transform: translate(-50%,-50%)
+    padding-left: 20px
+    box-sizing: border-box
+    padding: 27px
+    background: $white
+    width: 315px
+    color: $primaryColor
+    font-weight: bold
+    border-radius: 4px
+    text-align: center
+
+    &head
+        font-size: 170%
+        letter-spacing: 0.1rem
+
+.btn
+    border: none
+    background: $primaryColor
+    font-weight: bold
+    border-radius: 50px
+    padding-top: 0.7rem
+    padding-bottom: 0.7rem
+    padding-right: 1.5rem
+    padding-left: 1.5rem
+    animation: transitionIn 0.5s
+    margin-right: 1rem
+    margin-bottom: 1rem
+    color: $white
+
+    &submit
+        width: 100%
+
+    &:hover
+        color: $white
+
+a,
+a:hover,
+a:focus,
+a:active
+    color: $white
+    text-decoration: none
+
+    &.boxlink
+        color: $primaryColor
+        text-decoration: none
+    
+.custom-select
+    border-radius: 30px
+    background-color: $inputColor
+    border: none
+    margin-bottom: 15px
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+.form-control
+    outline: 0
+    width: 100%
+    height: 50px
+    border: 1px dashed #c8cbcc
+    border-radius: 50px
+    background-color: $white
+    color: $primaryColor
+    margin: 5px 0 15px
+    padding-left: 1.5rem
+    box-sizing: border-box
+    font-size: 14px
+    animation: transitionIn 0.5s
+    font-weight: bolder
+
+input[type='file']::file-selector-button
+    font-weight: bold
+    font-size: 12px
+    text-align: right
+    height: 50px
+    background-color: $white
+    border-radius: 50px
+    border: none
+
+.form-select
+    outline: 0
+    border: 1px dashed #c8cbcc
+    font-size: 14px
+    padding-left: 1.5rem
+    font-weight: bolder
+    color: #656b6d
+    height: 50px
+    border-radius: 25px
+
+input:focus
+    border: 1px dashed $primaryColor
+
+#alert 
+    color: $primaryColor
+    text-align: center
+    font-weight: bold
+    font-size: 1rem
+    animation: transitionIn 0.5s
+
+.fas
+    padding-left: 0.6rem
+    padding-right: 0.6rem
+    cursor: pointer
+
+.fa-2x
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem
+
+.navbar 
+    background-color: $navColor
+    z-index: 2
+    padding: 1.3rem
+    font-weight: bold
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.2)
+    
+.navbar-brand
+    font-size: 90%
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus 
+    outline: none
+    box-shadow: none
+
+@keyframes transitionIn 
+    from 
+        opacity: 0
+        transform: rotateX(-10deg)
+    
+    to 
+        opacity: 1
+        transform: rotateX(0)
+
+@media only screen and (max-width: 999px) 
+    .lead
+        font-size: 90%
+
+.col-lg-4,
+.col-lg-12
+    margin-top: 2rem
+
+.container 
+    min-width: 90%
+
+.progress
+    border-radius: 50px
