@@ -15,34 +15,31 @@ const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_U
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
 
 //Sendmail function
-async function sendmail(email, otp)
-{
-    try 
-    {
+async function sendmail(email, otp) {
+    try {
         const accessToken = await oAuth2Client.getAccessToken()
 
         const transporter = nodemailer.createTransport
-        ({
-            service: 'gmail',
+            ({
+                service: 'gmail',
 
-            auth: 
-            {
-                type: 'OAuth2',
-                user: MAILER_UN,
-                clientId: CLIENT_ID,
-                clientSecret: CLIENT_SECRET,
-                refreshToken: REFRESH_TOKEN,
-                accessToken: accessToken
-            }
-        })
-        let subject = 'Frostlake Team'
-        let content = `${ otp } is your verification code for Frostlake. Please do not share the code with anyone.`
-        await transporter.sendMail({ from: MAILER_UN, to: email, subject: subject, html: content }) 
-    } 
-    
-    catch (error) 
-    {
-        throw error    
+                auth:
+                {
+                    type: 'OAuth2',
+                    user: MAILER_UN,
+                    clientId: CLIENT_ID,
+                    clientSecret: CLIENT_SECRET,
+                    refreshToken: REFRESH_TOKEN,
+                    accessToken: accessToken
+                }
+            })
+        let subject = 'Icelake Team'
+        let content = `${otp} is your verification code for icelake. Please do not share the code with anyone.`
+        await transporter.sendMail({ from: MAILER_UN, to: email, subject: subject, html: content })
+    }
+
+    catch (error) {
+        throw error
     }
 }
 

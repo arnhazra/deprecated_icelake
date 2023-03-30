@@ -1,7 +1,7 @@
 {
-  "name": "frostlake",
+  "name": "icelake",
   "version": "1.0.0",
-  "description": "frostlake app",
+  "description": "icelake app",
   "main": "app.js",
   "scripts": {
     "start": "node app",

@@ -1,21 +1,21 @@
 {
-    "short_name": "Frostlake",
-    "name": "Frostlake",
+    "short_name": "Icelake",
+    "name": "Icelake",
     "icons": [
         {
-        "src": "favicon.ico",
-        "sizes": "64x64 32x32 24x24 16x16",
-        "type": "image/x-icon"
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
         },
         {
-        "src": "logosm.png",
-        "type": "image/png",
-        "sizes": "192x192"
+            "src": "logosm.png",
+            "type": "image/png",
+            "sizes": "192x192"
         },
         {
-        "src": "logolg.png",
-        "type": "image/png",
-        "sizes": "512x512"
+            "src": "logolg.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
     "start_url": ".",

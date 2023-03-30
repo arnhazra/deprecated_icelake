@@ -1,11 +1,8 @@
-# Frostlake
-
-## Web Application URL
-* https://frostlake.herokuapp.com
+# Icelake
 
 ## About
 * Changelog - Google OAuth Addition
-* Frostlake is a single page document cloud application
+* icelake is a single page document cloud application
 * Database less cryptographically hashed OTP based OAuth 2 factor authentication
 * Custom uuid based Access token to share projects
 * HS256 based auth token to authenticate user
